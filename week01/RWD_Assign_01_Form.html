@@ -1,0 +1,231 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Web Design: The Problems it Solves</title>
+  <style>
+    /* Basic Grey */
+
+    .basic-grey {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+      background: #F7F7F7;
+      padding: 25px 15px 25px 10px;
+      font: 12px "Noto Serif", sans-serif;
+      color: #333;
+      text-shadow: 1px 1px 1px #FFF;
+      border: 1px solid #E4E4E4;
+    }
+
+    .basic-grey h2 {
+      font-size: 25px;
+      padding: 0px 0px 10px 40px;
+      display: block;
+      border-bottom: 1px solid #E4E4E4;
+      margin: -10px -15px 30px -10px;
+      ;
+      color: #333;
+    }
+
+    .basic-grey h2>span {
+      display: block;
+      font-size: 11px;
+    }
+
+    .basic-grey label {
+      margin: 0px;
+    }
+
+    .basic-grey label>span {
+      float: left;
+      width: 20%;
+      text-align: right;
+      padding-right: 10px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .basic-grey input[type="text"],
+    .basic-grey input[type="email"],
+    .basic-grey textarea,
+    .basic-grey select {
+      border: 1px solid #DADADA;
+      color: #8333;
+      height: 30px;
+      margin-bottom: 16px;
+      margin-right: 6px;
+      margin-top: 2px;
+      outline: 0 none;
+      padding: 3px 3px 3px 5px;
+      width: 70%;
+      font-size: 12px;
+      line-height: 15px;
+      box-shadow: inset 0px 1px 4px #ECECEC;
+      -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+      -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+    }
+
+    .basic-grey textarea {
+      padding: 5px 3px 3px 5px;
+    }
+
+    .basic-grey fieldset {
+      padding: 5px 3px 10px 5px;
+    }
+
+    .basic-grey select {
+      background: #FFF url('down-arrow.png') no-repeat right;
+      background: #FFF url('down-arrow.png') no-repeat right);
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      width: 70%;
+      height: 35px;
+      line-height: 25px;
+    }
+
+    .basic-grey textarea {
+      height: 100px;
+    }
+
+    .basic-grey .button {
+      background: #E27575;
+      border: none;
+      padding: 10px 25px 10px 25px;
+      color: #FFF;
+      box-shadow: 1px 1px 5px #B6B6B6;
+      border-radius: 3px;
+      text-shadow: 1px 1px 1px #9E3F3F;
+      cursor: pointer;
+      margin-left: 30px;
+    }
+
+    .basic-grey .button:hover {
+      background: #CF7A7A
+    }
+
+    .basic-grey legend {
+      margin: 0 -10px;
+    }
+
+    .basic-grey fieldset {
+      margin: 0px 30px 15px 30px;
+      border-width: 1px;
+      border-color: #fafafa;
+    }
+
+    .container {
+      width: 530px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    body {
+      font-family: "Noto Serif", sans-serif;
+    }
+
+    p {
+      line-height: 1.75;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Responsive Web Design: The Problems it Solves</h1>
+    <p>Responsive web design solves many problems. Here are just a few of the big ones to consider.</p>
+
+    <h2>It is relatively cheaper. </h2>
+    <p>Instead of building a site for mobile and a site for desktop you can build one responsive site that adjusts seamlessly to its device size. It is much cheaper to maintain one website than two and there is less room for content inconsistencies.</p>
+
+    <h2>What about tablet?</h2>
+    <p>Tablets, because they are much larger than mobile would actually still receive the desktop experience. This is not ideal. The user would have to expand and zoom to see the information they need. Whether you have fat thumbs or skinny thumbs, filling
+      out forms can be quite a test in patience. This can be frustrating and lead to higher bounce rates. </p>
+
+    <h2>People want content. </h2>
+    <p>As, pointed in class last on Thursday, people spend so much of their time on their tablet and phones reading content. The first mobile sites were built in a truncated fashion. Most just had a few buttons leading to "important" information like phone
+      numbers, addresses and had a way to contact by email. Nowadays, users like to get as much information as they can. Let's say you are going to a restaurant with some friends tonight. You might want to read the menu ahead of time and find out if they
+      have gluten free options for your friend. You might want to know how much it is going to cost you. Maybe your are thirsty and you want to find out when happy hour is, or maybe you want to find out if the restaurant is dog friendly so you can bring
+      Fido too. </p>
+
+    <p>Ever thought about buying a car? Find out if they are a reputable dealer by reading their "About Us" page as well a their reviews. Wouldn't it be nice to narrow it down to a few available cars in the dealership's inventory? What if you could get pre-qualified
+      for the car on your bus commute to the dealership? </p>
+
+    <p>These things can all be solved and improved upon by optimizing with responsive design. It is all about creating a better and more fulfilling experience for the user no matter what device they chose. Responsive design is the way to go!</p>
+
+    <form class="basic-grey">
+      <h2>Rate this Article
+        <span>Please fill all the texts in the fields.</span>
+      </h2>
+
+      <!--start name and email text field section-->
+      <label>
+        <span>Your Name :</span>
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        <span>Your Email :</span>
+        <input type="email" name="email" required>
+      </label>
+      <!--send name and email text field section-->
+
+      <!--start radio button (rate this article) section-->
+      <fieldset>
+        <legend>How would you rate this article?</legend>
+        <label>
+          <input type="radio" name="rating" value="horrid">
+        That was horrid.
+        </label>
+        <label>
+          <input type="radio" name="rating" value="okay">
+        It was okay.
+        </label>
+        <label>
+          <input type="radio" name="rating" value="amazing">
+        That was AMAZING!
+        </label>
+      </fieldset>
+      <!--end radio button (rate this article) section-->
+
+      <!--start textbox section-->
+      <label>
+        <span>Message :</span>
+        <textarea id="message" name="message" placeholder="What did you think about this article?"></textarea>
+      </label>
+      <!--end textbox section-->
+
+      <!--start checkbox (devices) section-->
+      <fieldset>
+        <legend>What device(s) do you use to surf the interwebs?</legend>
+        <label>
+          <input type="checkbox" name="device" value="tablet">
+        Mobile Phone
+        </label>
+        <label>
+          <input type="checkbox" name="device" value="desktop">
+        Desktop
+        </label>
+        <label>
+          <input type="checkbox" name="device" value="other">
+        Other
+        </label>
+      </fieldset>
+      <!--end checkbox (devices) section-->
+
+      <!--start submit button-->
+      <input type="submit" value="Submit" name="submit" class="button">
+      <!--end submit button-->
+    </form>
+  </div>
+</body>
+
+</html>
