@@ -1,0 +1,11 @@
+/*
+The primary stylesheet. This sheet pulls in all the components in order of appearance.
+*/
+
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/typography.css');
+@import url('CSS/details.css');
+@import url('CSS/nav.css');
+@import url('CSS/card-styles.css');
+@import url('CSS/all-together.css');

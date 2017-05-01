@@ -1,0 +1,111 @@
+/* Base styles that apply to all menus */
+.menu-section {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid hsl(0, 0%, );
+}
+
+.menu .social-menu ul{background:transparent;}
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: hsl(0, 0%, 15%);
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+
+/* Styles for mixed menu (drop-down + social) */
+.nav-mixed {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: hsl(0, 0%, 15%);
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* Styles for mixed menu (drop-down + social) */
+.top-nav-mixed {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: transparent;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+
+
+/* Styles for social media and cart menu */
+
+/* Find src URL and add in correct social media icon. */
+.cart-menu li a:before, .social-menu li a:before {
+    font-family: 'Fontawesome';
+    -webkit-font-smoothing: antialiased;
+    content: '\f08e';
+}
+.cart-menu li a[href*="cart"]::before { content: '\f07a'; }
+
+.social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
+.social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
+.social-menu li a[href*="youtube.com"]::before { content: '\f16a'; }
+
+
+/* Flexbox stuff */
+
+.cart-menu ul, .social-menu ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+
+/* Styles for Single Level Menu */
+
+@media screen and (min-width: 30em) {
+
+    .single-nav ul {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .single-nav li {
+        -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+        text-align: center;
+    }
+
+}

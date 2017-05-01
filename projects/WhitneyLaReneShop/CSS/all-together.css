@@ -1,0 +1,55 @@
+.masthead {
+    background-image:url("../images/masthead-octopus.jpg");
+}
+
+.custom{
+    background-image:url("../images/custom-background.jpg");
+    padding: 4em 0;
+    text-align:center;
+    color:white;
+}
+
+.product-filter {
+  display: flex;
+}
+.product-filter h2 {
+  flex-grow: 1;
+}
+.sort {
+  display: flex;
+}
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+}
+
+
+button.outline{
+  background-color:transparent;
+  border: 2px solid white;
+  color:white;
+  padding: 1em 2em;
+  text-transform:uppercase;
+}
+
+button.outline:hover{
+  background-color:white;
+  border: 2px solid white;
+  color:black;
+  padding: 1em 2em;
+  text-transform:uppercase;
+}
+
+.content{display:block;}
+
+.site-title {
+    color: black;
+}
+
+.main-area {
+    padding: 2em;
+}
+
+.sidebar {
+    background: white;
+}
