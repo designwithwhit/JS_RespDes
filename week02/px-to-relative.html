@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pixels to Relative</title>
+</head>
+<style type="text/css">
+  /* TODO: convert all sizing to ems or percentages */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 100%;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid pink;
+  }
+
+  header {
+    width: 93.75%; /* 900px/960px */
+    padding: 1.777777777%; /*16px/900px*/
+    margin: auto;
+    border: 1px solid aqua;
+  }
+
+  aside {
+    width: 31.25%; /*300/960*/
+    padding: 3.33333333%; /*10px/300*/
+    float: left;
+    border: 1px solid blue;
+  }
+
+  section {
+    width: 62.5%; /*600px/960*/
+    padding: 16px;
+    float: right;
+    border: 1px solid orange;
+  }
+
+  footer {
+    width: 100%;
+    padding: 6px;
+    text-align: center;
+    clear: both;
+    border: 1px solid purple;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Fixed Measurements Are For the Birds!</h1>
+    </header>
+
+    <aside>
+      <p>Black or pinto beans? Flour or corn tortillas? Tacos for breakfast, lunch and dinner. Um, Tabasco? No thanks, do you have any Cholula? Let’s do a beef and a chicken, and one with both. Give me tacos, or give me death. Does guac cost extra? Um, Tabasco? No thanks, do you have any Cholula? TACOS!! Flour or corn tortillas? Um, Tabasco? No thanks, do you have any Cholula? Pico de gallo, on the side please. Tacos al pastor made with adobada meat. It’s taco Tuesday Monday. Carne asada on corn tortillas.</p>
+    </aside>
+
+    <section>
+      <h2>But Why?</h2>
+      <p>Yeah, apparently the taco shack was robbed. They left the money but took the tacos. Um, Tabasco? No thanks, do you have any Cholula? Um, Tabasco? No thanks, do you have any Cholula? Shrimp tacos are tasty tacos! CARNE ASADA!! Shrimp tacos are tasty tacos! Fish tacos: lettuce or cabbage, pico de gallo, avocado and a sour cream or citrus/mayonnaise sauce, all placed on top of a corn or flour tortilla. Side of rice and beans, please. Tacos for breakfast, lunch and dinner. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.</p>
+      <p>Every day is taco ipsum tuesday. Tacos al pastor made with adobada meat. Shrimp tacos are tasty tacos! Um, Tabasco? No thanks, do you have any Cholula? Add in a few el Pastor with guac and diced onions. CARNITAS!! Black or pinto beans? Fish tacos: lettuce or cabbage, pico de gallo, avocado and a sour cream or citrus/mayonnaise sauce, all placed on top of a corn or flour tortilla. Tacos, again? This will be 5 times this week and it’s only Tuesday. You see, the refried beans are really just the adhesive necessary to apply the soft tortilla to the hard taco shell. Can you put some peppers and onions on that?</p>
+    </section>
+
+    <footer>
+      <p>Shrimp tacos are tasty tacos!</p>
+    </footer>
+  </div>
+</body>
+</html>
