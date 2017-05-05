@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cat Life</title>
+
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+  <style type="text/css">
+    body {
+      /*background-image: url("gradient-background.jpg");*/
+       margin: 0 auto;
+       background-color:black;
+    }
+
+    section {
+      /*background-image: url("gradient-background.jpg");*/
+       background-image: url("stars.png"), -webkit-radial-gradient(teal 5%, purple 15%, black 60%);
+       background-repeat:repeat;
+    }
+
+    header{
+    background-image: url("space-header.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color:black;
+    padding:2em;
+    color:white;
+    }
+    header h1{text-align: center; font-family: 'Love Ya Like A Sister', cursive; font-size:3em;}
+    nav{border:1px solid #ccc;border-width:1px 0;list-style:none;margin:0;padding:0;text-align:center;}
+    nav ul{padding:0px;}
+    nav li{display:inline;font-family: 'Love Ya Like A Sister', cursive;font-size: 1.5em;}
+    nav a{color:white; display:inline-block;padding:10px; text-decoration: none;}
+    img { max-width: 100%; }
+
+    .photo-container {
+      width: 90%;
+      margin: auto;
+      border: solid 1px rgba(189, 63, 191, 0.62);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .photo-frame {
+      /* equivalent to 49.5% of total browser width,
+      to make calculating srcset easier for us :) */
+      width: 55%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cat Life</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Yawning</a></li>
+        <li><a href="#">Napping</a></li>
+        <li><a href="#">Clawing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <section>
+    <h2>Community Submitted Photos</h2>
+
+    <div class="photo-container">
+      <div class="photo-frame">
+        <img srcset="yeah.jpg 1280w, yeah-800w.jpg 800w, yeah-400w.jpg 400w"
+              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
+              src="yeah-800w.jpg"
+              alt="really cool cat yelling 'yeah!'">
+      </div>
+
+      <div class="photo-frame">
+        <img srcset="dragon.jpg 1280w, dragon-800w.jpg 800w, dragon-400w.jpg 400w"
+              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
+              src="dragon-800w.jpg"
+              alt="a fire breathing cat'">
+      </div>
+
+      <div class="photo-frame">
+        <img srcset="grr.jpg 1280w, grr-800w.jpg 800w, grr-400w.jpg 400w"
+              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
+              src="grr-800w.jpg" alt="a cat making a weird face">
+      </div>
+<!--
+
+-->
+
+    </div>
+  </section>
+
+</body>
+</html>
